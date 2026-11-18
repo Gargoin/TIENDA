@@ -9,6 +9,7 @@ import express from "express";
 import productRouter from "./src/routes/product.router.js";
 import authRouter from "./src/routes/auth.router.js";
 import cartRoutes from "./src/routes/cart.routes.js";
+import printfulRouter from "./src/routes/printful.router.js";
 
 import cors from "cors";
 
@@ -24,5 +25,6 @@ app.get("/", (req, res) => {
 app.use("/api/products", productRouter);
 app.use("/api/auth", authRouter);
 app.use("/api/cart", cartRoutes);
+app.use("/api/printful", printfulRouter);
 
 export default app;
