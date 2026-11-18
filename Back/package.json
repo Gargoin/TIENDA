@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node --use-system-ca index.js",
-    "dev": "node --use-system-ca --watch index.js",
+    "dev": "set \"NODE_USE_SYSTEM_CA=1\" && node --watch index.js",
     "test": "mocha --require test/setup.js --exit",
     "seed": "node src/seeders/product.seeder.js"
   },
