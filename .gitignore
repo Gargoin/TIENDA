@@ -1,0 +1,4 @@
+# Historical repositories retained locally while this folder is migrated to a monorepo.
+Front/.git.legacy/
+Back/.git.legacy/
+Front/.env copy
